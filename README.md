@@ -2,7 +2,7 @@
 
 > Automated test suite for [SauceDemo](https://www.saucedemo.com) built with **Playwright + TypeScript**, showcasing real-world QA engineering practices and **Claude MCP integration**.
 
-[![Playwright Tests](https://github.com/YOUR_USERNAME/playwright-portfolio/actions/workflows/playwright.yml/badge.svg)](https://github.com/YOUR_USERNAME/playwright-portfolio/actions)
+[![Playwright Tests](https://github.com/Sylvia-Koto/playwright-portfolio/actions/workflows/playwright.yml/badge.svg)](https://github.com/Sylvia-Koto/playwright-portfolio/actions)
 
 ---
 
