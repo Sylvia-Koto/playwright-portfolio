@@ -11,7 +11,10 @@ export const test = base.extend<AuthFixtures>({
   authenticatedPage: async ({ page }, use) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
-    await loginPage.login('standard_user', 'secret_sauce');
+    await loginPage.login(
+      process.env.STANDARD_USER!,
+      process.env.STANDARD_PASSWORD!
+    );
     const inventoryPage = new InventoryPage(page);
     await inventoryPage.expectLoaded();
     await use(page);
@@ -20,7 +23,10 @@ export const test = base.extend<AuthFixtures>({
   lockedOutPage: async ({ page }, use) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
-    await loginPage.login('locked_out_user', 'secret_sauce');
+    await loginPage.login(
+      process.env.LOCKED_USER!,
+      process.env.LOCKED_PASSWORD!
+    );
     await use(page);
   },
 });

@@ -29,6 +29,11 @@ jobs:
 
       - name: Run Playwright tests
         run: npx playwright test
+        env:
+          STANDARD_USER: ${{ secrets.STANDARD_USER }}
+          STANDARD_PASSWORD: ${{ secrets.STANDARD_PASSWORD }}
+          LOCKED_USER: ${{ secrets.LOCKED_USER }}
+          LOCKED_PASSWORD: ${{ secrets.LOCKED_PASSWORD }}
 
       - name: Upload HTML report
         uses: actions/upload-artifact@v4
