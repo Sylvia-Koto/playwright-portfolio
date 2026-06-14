@@ -1,9 +1,9 @@
 export const USERS = {
-  standard: { username: 'standard_user', password: 'secret_sauce' },
-  lockedOut: { username: 'locked_out_user', password: 'secret_sauce' },
-  problem: { username: 'problem_user', password: 'secret_sauce' },
-  performance: { username: 'performance_glitch_user', password: 'secret_sauce' },
-} as const;
+  standard: { username: process.env.STANDARD_USER!, password: process.env.STANDARD_PASSWORD! },
+  lockedOut: { username: process.env.LOCKED_USER!, password: process.env.LOCKED_PASSWORD! },
+  problem: { username: process.env.PROBLEM_USER!, password: process.env.STANDARD_PASSWORD! },
+  performance: { username: process.env.PERFORMANCE_USER!, password: process.env.STANDARD_PASSWORD! },
+};
 
 export const PRODUCTS = {
   backpack: 'Sauce Labs Backpack',

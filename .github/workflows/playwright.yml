@@ -34,6 +34,8 @@ jobs:
           STANDARD_PASSWORD: ${{ secrets.STANDARD_PASSWORD }}
           LOCKED_USER: ${{ secrets.LOCKED_USER }}
           LOCKED_PASSWORD: ${{ secrets.LOCKED_PASSWORD }}
+          PROBLEM_USER: ${{ secrets.PROBLEM_USER }}
+          PERFORMANCE_USER: ${{ secrets.PERFORMANCE_USER }}
 
       - name: Upload HTML report
         uses: actions/upload-artifact@v4
