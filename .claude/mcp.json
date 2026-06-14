@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"],
+      "description": "Playwright MCP server — allows Claude to navigate pages, click elements, fill forms and take screenshots directly in the browser during test development"
+    }
+  }
+}
